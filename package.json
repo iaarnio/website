@@ -7,7 +7,7 @@
     "login": "gcloud auth login",
     "set-project": "export $(cat .env | xargs) | gcloud --verbosity debug config set project $PROJECT",
     "deploy": "gcloud app deploy app.yaml",
-    "prettier": "prettier **/*"
+    "prettier": "prettier --write \"www/*.{html,css}\""
   },
   "author": "Ilari Aarnio",
   "license": "ISC",
