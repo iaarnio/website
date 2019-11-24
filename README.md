@@ -20,3 +20,6 @@ Preparations (when needed):
 
 Deployment:
 - `npm run deploy`
+
+Cleanup:
+- go to GCP console appengine version page (https://console.cloud.google.com/appengine/versions) and remove the old version.
