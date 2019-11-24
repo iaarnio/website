@@ -4,14 +4,16 @@
   "description": "Website for Codesys Oy",
   "main": "index.js",
   "scripts": {
+    "dev": "http-server www",
     "login": "gcloud auth login",
     "set-project": "export $(cat .env | xargs) | gcloud --verbosity debug config set project $PROJECT",
     "deploy": "gcloud app deploy app.yaml",
-    "prettier": "prettier --write \"www/*.{html,css}\""
+    "prettier": "prettier --write www/*.{html,css}"
   },
   "author": "Ilari Aarnio",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "http-server": "^0.11.1",
     "prettier": "^1.19.1"
   }
 }
