@@ -80,6 +80,11 @@ body > #outerwrap {
   text-align: center;
 }
 
+.text {
+  margin: 5px;
+  padding: 10px;
+}
+
 .bigger {
   font-size: 200%;
 }
@@ -147,7 +152,7 @@ p {
 }
 
 .nearAbove {
-  margin-top: -10px;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
