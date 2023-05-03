@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "http-server www",
     "login": "gcloud auth login",
-    "set-project": "export $(cat .env | xargs) | gcloud --verbosity debug config set project $PROJECT",
+    "set-project": "gcloud --verbosity debug config set project codesys-191120",
     "deploy": "gcloud app deploy app.yaml",
     "prettier": "prettier --write www/*.{html,css}"
   },
