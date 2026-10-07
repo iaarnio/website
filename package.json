@@ -1,0 +1,19 @@
+{
+  "name": "codesys-website",
+  "version": "1.0.0",
+  "description": "Website for Codesys Oy",
+  "main": "index.js",
+  "scripts": {
+    "dev": "http-server www",
+    "login": "gcloud auth login",
+    "set-project": "gcloud --verbosity debug config set project codesys-191120",
+    "deploy": "gcloud app deploy app.yaml",
+    "prettier": "prettier --write www/*.{html,css}"
+  },
+  "author": "Ilari Aarnio",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "0.12.3",
+    "prettier": "2.2.1"
+  }
+}
